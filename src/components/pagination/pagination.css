@@ -1,0 +1,43 @@
+@import "tailwindcss/base";
+
+.paginate {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  cursor: pointer;
+}
+
+.paginate a {
+  padding: 10px;
+  color: #000000 !important;
+  @apply dark:!text-white;
+  @apply min-w-[2.5rem];
+  @apply h-8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  border: solid 1px #d3d3d3;
+}
+
+.paginate__link {
+  font-weight: bold;
+  @apply dark:!text-white;
+}
+
+.paginate__link--active a {
+  font-weight: bold;
+  background-color: #ced8e5;
+  @apply dark:!text-black;
+}
+
+.paginate__link--disabled a {
+  font-weight: bold;
+  @apply dark:!text-white;
+}
+
+.paginate__end-link {
+  border: unset !important;
+  background-color: unset;
+  @apply dark:!text-white;
+}
